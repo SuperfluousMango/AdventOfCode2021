@@ -111,7 +111,8 @@ function takeDiracTurn(player: number, gameData: Map<string, number>): [Map<stri
 }
 
 
-
+// Couldn't track down the bad sums I was getting, so I borrowed someone else's code and added logging
+// so I could figure out which numbers were going wrong on which turns
 function play_dirac(p1, p2) {
     let all_games = {};
     all_games[p1 + "," + 0 + "," + p2 + "," + 0] = 1;
